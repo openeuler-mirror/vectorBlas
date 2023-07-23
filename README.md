@@ -1,23 +1,34 @@
 # vectorBlas
 
 #### 介绍
-A high performance Blas Library Based on JDK vector API
+- vectorBlas：一个基于Java VectorAPI实现的BLAS库；
+- [BLAS](https://www.netlib.org/blas/index.html)： Basic Linear Algebra Subprograms，提供常见的线性代数运算，例如向量加法、标量乘法、点积、线性组合和矩阵乘法等；
+- [VectorAPI](https://openjdk.org/jeps/338)：JDK16+支持的一种支持向量化的接口，支持多个平台的向量化指令，使用户可以精确地控制和利用现代CPU普遍存在的SIMD(Single Instruction Multiple Data)能力；
 
 #### 软件架构
-软件架构说明
+- vectorBlas是BLAS的Java实现，其接口参数与BLAS规范一致；
+- vectorBlas目前由Level1、Level2、Level3三部分组成：
+  - Level1: 标量-标量
+  - Level2: 标量-向量
+  - Level3: 向量-向量
+- 目前支持的数据类型：
+  - double
+  - float
+- 对于每个函数接口，vectorBlas有vectorAPI向量化实现与普通实现两种方法，对于可进行向量化的（如incx=1），则自动使用向量化实现，否则使用普通的非向量化实现；
+- 主要的优化方法：VectorAPI向量化、循环展开、矩阵分块、Packing等；
 
 
 #### 安装教程
+编译依赖：
+- JDK16+
+- Maven
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+编译命令：  
+`mvn clean package`
 
 #### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+运行时依赖：
+- JDK16+
 
 #### 参与贡献
 
