@@ -7,12 +7,12 @@
     <parent>
         <groupId>com.huawei.vector</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0</version>
+        <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>vectorBlas</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <build>
