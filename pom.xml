@@ -11,6 +11,7 @@
 
     <modules>
         <module>vectorBlas</module>
+        <module>vectorBlas-benchmark</module>
     </modules>
 
     <properties>
