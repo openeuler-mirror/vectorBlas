@@ -1,0 +1,7 @@
+# Java
+*.class
+vecblas.iml
+*.xml
+.idea
+/target/generated-sources
+/target/classes

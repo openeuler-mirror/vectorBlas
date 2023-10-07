@@ -30,6 +30,12 @@
 运行时依赖：
 - JDK16+
 
+运行benchmark
+```shell
+${JAVA_HOME}/bin/java -jar vectorBlas-benchmark/target/vectorBlas-benchmarks.jar
+
+```
+
 #### 参与贡献
 
 1.  Fork 本仓库
